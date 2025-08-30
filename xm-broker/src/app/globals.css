@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b1624; /* deep navy */
+  --foreground: #e8eef7;
+  --primary: #2e6bff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Remove unintended gap under navbar */
+main { padding-top: 0; }
+
+.navbar { backdrop-filter: saturate(1.2) blur(6px); background: rgba(10,18,32,0.9) !important; }
+
+/* Hero section styling */
+.hero-section {
+  position: relative;
+  background:
+    /* dark overlay to make background blackish */
+    linear-gradient(180deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    radial-gradient(1000px 400px at 20% 0%, rgba(46,107,255,0.08), transparent 60%),
+    radial-gradient(800px 300px at 80% 10%, rgba(141,85,255,0.06), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0) 40%),
+    url('/hero-bg.jpg');
+  background-size: cover;
+  /* Lift only the image layer while keeping gradient overlays centered */
+  background-position:
+    center,
+    center,
+    center,
+    center,
+    center -120px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.hero-section::after {
+  /* Fine noise overlay for texture */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.25;
+}
+
+.hero-section::before {
+  /* Softer glow under the rounded bottom */
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -18px;
+  height: 36px;
+  background: radial-gradient(60% 100% at 50% 0%, rgba(46,107,255,0.22), rgba(46,107,255,0) 70%);
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+.hero-section > * { position: relative; z-index: 1; }
+
+.asset-chip {
+  background: rgba(8,14,24,0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 12px 14px;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+/* Hide scrollbars for horizontal chips scroller */
+.chips-bar::-webkit-scrollbar { display: none; }
+.chips-bar { scrollbar-width: none; }
+
+.asset-chip .xsmall { font-size: 12px; }
+
+.chips-bar {
+  background: rgba(8,14,24,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  backdrop-filter: blur(8px);
+}
+
+.risk-bar { position: sticky; bottom: 0; }
+
+/* Marquee (awards) */
+.marquee { 
+  position: relative; 
+  overflow: hidden; 
+  mask-image: linear-gradient(90deg, transparent 0, #000 10%, #000 90%, transparent 100%);
+}
+.marquee__track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-left 28s linear infinite;
+}
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* CTA shimmer effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -150%;
+  height: 100%; width: 150%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.25) 30%, transparent 60%);
+  transform: skewX(-20deg);
+}
+.btn-shimmer:hover::before {
+  animation: shimmer 0.9s ease-out;
+}
+@keyframes shimmer {
+  from { left: -150%; }
+  to { left: 120%; }
+}
+
+/* Logo helpers */
+.logo-item { opacity: .85; transition: opacity .2s ease, transform .2s ease; }
+.logo-item:hover { opacity: 1; transform: translateY(-2px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; }
+}

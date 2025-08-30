@@ -17,10 +17,10 @@ export default function SupportBanner() {
           <div className="relative grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-8 px-6 sm:px-10 py-8 sm:py-12">
             <div className="text-center md:text-left">
               <h3 className="text-[clamp(1.6rem,3.5vw,2.25rem)] font-extrabold tracking-tight">
-                Rely on Award‑Winning Support
+                Rely on Award Winning Support
               </h3>
               <p className="mt-3 text-white/85 text-[clamp(0.95rem,2vw,1.05rem)] max-w-2xl mx-auto md:mx-0">
-                Whenever you need us we're just a few seconds away, 24/7, in extensive language options.
+                Whenever you need us we are just a few seconds away, 24/7, in extensive language options.
               </p>
 
               {/* badges */}

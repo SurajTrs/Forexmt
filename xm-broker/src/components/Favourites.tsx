@@ -39,7 +39,7 @@ export default function Favourites() {
       {/* Heading */}
       <div className="text-center mb-12 sm:mb-16">
         <h2 className="text-[clamp(2.25rem,5vw,3rem)] font-bold tracking-tight text-gray-900">
-          Discover Our Traders' <span className="text-blue-600">Top Picks</span>
+          Discover Our Traders <span className="text-blue-600">Top Picks</span>
         </h2>
         <p className="mt-4 text-gray-600 text-[clamp(1rem,2.5vw,1.25rem)] max-w-2xl mx-auto">
           Explore the standout products that make trading with us exceptional, trusted by our community.
@@ -92,7 +92,7 @@ export default function Favourites() {
             <div>
               <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight">Forexmt Trading App</h3>
               <p className="mt-3 text-gray-200 max-w-md text-sm sm:text-base">
-                Access Forexmt's full suite of trading tools with our award-winning mobile app, designed for seamless performance.
+                Access Forexmt full suite of trading tools with our award-winning mobile app, designed for seamless performance.
               </p>
             </div>
 

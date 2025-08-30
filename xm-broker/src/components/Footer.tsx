@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="Forexmt Home">
-              <Image src="/logo.svg" alt="Forexmt Logo" width={112} height={36} className="opacity-90" />
+              <Image src="/logo.png" alt="Forexmt Logo" width={128} height={40} className="opacity-90 h-10 w-auto" />
             </Link>
             <div className="flex items-center gap-4 sm:gap-6">
               {socials.map((social) => (
@@ -166,7 +166,7 @@ export default function Footer() {
 
       {/* Cookies Choices */}
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-2">
           <button className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[11px] tracking-wider uppercase text-[var(--foreground)] transition hover:border-white/25 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30">
             Cookies Choices
           </button>
@@ -175,7 +175,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-white/60">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-white/60">
           <span>© {year} Forexmt</span>
           <span>v2.0</span>
         </div>

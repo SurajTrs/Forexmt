@@ -19,8 +19,8 @@ function NavItem({ label, items, groups, activeLabel, setActive }: {
   const isOpen = activeLabel === label;
   const hasMultiple = (groups?.length ?? 0) > 1;
   const menuClasses = groups
-    ? "absolute top-full left-0 mt-2 w-fit max-w-[95vw] overflow-hidden rounded-2xl ring-1 ring-white/10 bg-gradient-to-b from-slate-950/95 to-slate-900/80 backdrop-blur-md shadow-2xl p-2"
-    : "absolute top-full left-0 mt-1 w-56 overflow-hidden rounded-xl ring-1 ring-white/10 bg-gradient-to-b from-slate-950/95 to-slate-900/80 backdrop-blur-md shadow-2xl p-2";
+    ? "absolute top-full left-0 mt-5 w-fit max-w-[95vw] overflow-hidden rounded-2xl ring-1 ring-white/10 bg-gradient-to-b from-slate-950/100 to-slate-900/90 backdrop-blur-md shadow-2xl p-2"
+    : "absolute top-full left-0 mt-4 w-56 overflow-hidden rounded-xl ring-1 ring-white/10 bg-gradient-to-b from-slate-950/100 to-slate-900/90 backdrop-blur-md shadow-2xl p-2";
 
   const handleEnter = () => {
     if (closeTimeout.current) {
@@ -99,10 +99,17 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/next.svg" alt="Forexmt" width={32} height={18} className="opacity-80" />
-            <span className="font-semibold text-white">Forexmt</span>
+        <div className="flex h-20 items-center justify-between">
+          <Link href="/" className="flex items-center gap-2" aria-label="Forexmt home">
+            <Image
+              src="/logo.png"
+              alt="Forexmt logo"
+              width={260}
+              height={78}
+              priority
+              className="h-[3.75rem] sm:h-[4.25rem] md:h-[4.75rem] w-auto"
+              sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 288px"
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-4">

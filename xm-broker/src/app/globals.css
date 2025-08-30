@@ -149,3 +149,6 @@ main { padding-top: 0; }
 @media (prefers-reduced-motion: reduce) {
   .marquee__track { animation: none; }
 }
+html, body {
+  overflow-x: hidden;
+}

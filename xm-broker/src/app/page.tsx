@@ -5,7 +5,6 @@ import TradersIntro from "@/components/TradersIntro";
 import Results from "@/components/Results";
 import RiskBanner from "@/components/RiskBanner";
 import SupportBanner from "../components/SupportBanner";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <SecurityBanner />
       <TradersIntro />
       <SupportBanner/>
-      <Footer />
     </main>
   );
 }

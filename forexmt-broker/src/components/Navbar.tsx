@@ -115,9 +115,9 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="ForexMT Logo"
-              width={100}
-              height={32}
-              className="h-8 w-auto"
+              width={200}
+              height={190}
+              className="h-25 w-auto"
               priority
             />
           </Link>

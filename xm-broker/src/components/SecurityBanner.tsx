@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SecurityBanner() {
   return (
-    <section className="relative py-10 sm:py-14">
+    <section className="relative py-10 sm:py-14 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Dark blue rounded panel */}
         <div className="relative rounded-[28px] sm:rounded-[32px] bg-gradient-to-br from-[#103a6b] via-[#0d3561] to-[#0a2b4f] text-white shadow-2xl">

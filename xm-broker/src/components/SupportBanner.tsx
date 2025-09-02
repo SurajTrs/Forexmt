@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function SupportBanner() {
   return (
-    <section className="relative py-10 sm:py-14">
+    <section className="relative py-10 sm:py-14 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-[28px] sm:rounded-[32px] bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white shadow-2xl ring-1 ring-white/10">
           {/* background glows */}

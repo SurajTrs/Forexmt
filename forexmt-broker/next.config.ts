@@ -1,15 +1,27 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
-  /* config options here */
   eslint: {
     // Do not fail the build on ESLint errors during production builds
     ignoreDuringBuilds: true,
   },
   typescript: {
     // Do not fail the build on type errors during production builds
-    // Consider fixing types locally while allowing deployment
     ignoreBuildErrors: true,
+  },
+  // Output configuration
+  output: 'standalone',
+  outputFileTracingRoot: __dirname,
+  // Configure images
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 

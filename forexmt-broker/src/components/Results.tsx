@@ -135,7 +135,7 @@ export default function Results() {
 
         <div className="mt-10 flex items-center justify-center">
           <a
-            href="#"
+            href="/start-trading"
             className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-base font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500 hover:shadow-blue-600/40"
             aria-label="Start Trading Today"
           >

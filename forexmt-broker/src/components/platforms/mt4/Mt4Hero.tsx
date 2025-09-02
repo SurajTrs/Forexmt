@@ -43,7 +43,7 @@ export default function Mt4Hero() {
             className="mt-8 flex items-center justify-center gap-4"
           >
             <Link
-              href="#get-mt4"
+              href="/start-trading"
               className="inline-flex items-center justify-center rounded-2xl bg-white px-7 py-3.5 text-[15px] sm:text-base font-semibold text-slate-900 shadow-sm ring-1 ring-white/10 transition-transform hover:-translate-y-0.5 hover:bg-white/90"
             >
               Start Trading with MT4

@@ -15,7 +15,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NODE_ENV === 'production' 
+  ? 'https://www.forexmt.com' 
+  : 'http://localhost:3000';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "ForexMT | Online Trading Platform",
   description: "Trade Forex, Stocks, Indices, Commodities, and Cryptocurrencies with ForexMT's award-winning trading platform. Start your trading journey today.",
   keywords: ["ForexMT", "Forex Trading", "Online Trading", "CFDs", "Stocks", "Commodities", "Cryptocurrencies"],

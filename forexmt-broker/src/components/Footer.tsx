@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import type { IconType } from "react-icons";
 
 export default function Footer() {
@@ -25,47 +25,43 @@ export default function Footer() {
     {
       title: "Our Offering",
       links: [
-        { label: "Forexmt Copy Trading", href: "/copy-trading" },
-        { label: "Forexmt Competitions", href: "/competitions" },
-        { label: "Forexmt Traders Club", href: "/traders-club" },
+        { label: "Copy Trading", href: "/copy-trading" },
+        { label: "Trading Competitions", href: "/competitions" },
+        { label: "100% Deposit Bonus", href: "/promotions/100-bonus" },
+        { label: "Traders Club", href: "/traders-club" },
       ],
     },
     {
       title: "Platforms",
       links: [
-        { label: "MT4 Platform", href: "/mt4" },
-        { label: "MT5 Platform", href: "/mt5" },
-        { label: "Forexmt App", href: "/app" },
-        { label: "APK", href: "/apk" },
+        { label: "MT4 Platform", href: "/platforms/mt4" },
+        { label: "MT5 Platform", href: "/platforms/mt5" },
+        { label: "Forexmt App", href: "/platforms/app" },
+        { label: "APK", href: "/platforms/apk" },
       ],
     },
     {
       title: "Company",
       links: [
-        { label: "Who is Forexmt?", href: "/about" },
-        { label: "Careers", href: "/careers" },
-        { label: "Regulation", href: "/regulation" },
-        { label: "Legal Documents", href: "/legal" },
-        { label: "Forexmt Awards", href: "/awards" },
-        { label: "CSR", href: "/csr" },
-        { label: "Contact Us", href: "/contact" },
-        { label: "Help Center", href: "/help" },
+        { label: "About Us", href: "/company/about" },
+        { label: "Awards", href: "/company/awards" },
+        { label: "Contact", href: "/company/contact" },
       ],
     },
   ];
 
   const policies = [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Cookie Policy", href: "/cookies" },
-    { label: "Vulnerability Policy", href: "/vulnerability" },
-    { label: "Legal Documents", href: "/legal" },
+    { label: "Privacy Policy", href: "/" },
+    { label: "Cookie Policy", href: "/" },
+    { label: "Risk Disclosure", href: "/" },
+    { label: "Terms of Service", href: "/" },
+    { label: "Legal Documents", href: "/" },
   ];
 
   const socials: { label: string; href: string; Icon: IconType }[] = [
-    { label: "Twitter", href: "https://twitter.com/forexmt", Icon: FaTwitter },
-    { label: "LinkedIn", href: "https://linkedin.com/company/forexmt", Icon: FaLinkedin },
-    { label: "Facebook", href: "https://facebook.com/forexmt", Icon: FaFacebook },
-    { label: "Instagram", href: "https://instagram.com/forexmt", Icon: FaInstagram },
+    { label: "Twitter", href: "https://x.com/FOREXMT166091", Icon: FaTwitter },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61579959541051", Icon: FaFacebook },
+    { label: "Instagram", href: "https://www.instagram.com/forex__mt/", Icon: FaInstagram },
   ];
 
   return (

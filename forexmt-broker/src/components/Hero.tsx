@@ -117,7 +117,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center gap-4 justify-center mt-8"
           >
             <Link
-              href="#"
+              href="/promotions/100-bonus"
               className="relative inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold
               rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 shadow-lg shadow-blue-600/40
               hover:scale-105 hover:shadow-xl transition-all duration-200"
@@ -125,7 +125,7 @@ export default function Hero() {
               Get 100% Bonus up to $100
             </Link>
             <Link
-              href="#"
+              href="/register?account=demo"
               className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/20
               bg-white/5 backdrop-blur-md text-white/90 hover:bg-white/10 transition-all"
             >
@@ -152,17 +152,28 @@ export default function Hero() {
           <motion.div variants={item} className="mt-12">
             <div className="flex justify-center gap-4 px-2 flex-wrap">
               {assets.map((a, index) => (
-                <motion.div
-                  key={a.label}
-                  whileHover={{ y: -4, scale: 1.03 }}
-                  className="flex-shrink-0 min-w-[180px] bg-slate-800/40 backdrop-blur-sm border border-slate-700/40 
-                  rounded-xl px-4 py-3 cursor-pointer hover:border-cyan-400/50 transition-colors"
+                <Link 
+                  key={a.label} 
+                  href={
+                    a.label === 'EURUSD' ? '/markets/forex' :
+                    a.label === 'US500' ? '/markets/indices' :
+                    a.label === 'GOLD' ? '/markets/metals' :
+                    a.label === 'COFFEE' ? '/markets/commodities' :
+                    '/markets/stocks'
+                  }
+                  className="block"
                 >
-                  <div className="font-semibold text-lg flex items-center gap-2">
-                    <span className="text-xl">{a.flag}</span> {a.label}
-                  </div>
-                  <div className="text-sm text-slate-400">{a.sub}</div>
-                </motion.div>
+                  <motion.div
+                    whileHover={{ y: -4, scale: 1.03 }}
+                    className="flex-shrink-0 min-w-[180px] bg-slate-800/40 backdrop-blur-sm border border-slate-700/40 
+                    rounded-xl px-4 py-3 hover:border-cyan-400/50 transition-colors"
+                  >
+                    <div className="font-semibold text-lg flex items-center gap-2">
+                      <span className="text-xl">{a.flag}</span> {a.label}
+                    </div>
+                    <div className="text-sm text-slate-400">{a.sub}</div>
+                  </motion.div>
+                </Link>
               ))}
             </div>
           </motion.div>

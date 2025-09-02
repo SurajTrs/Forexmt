@@ -21,7 +21,7 @@ export default function TradeAssetsCta() {
           </p>
           <div className="mt-6">
             <Link
-              href="#open-account"
+              href="/register"
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition-transform hover:-translate-y-0.5 hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300"
             >
               Open an Account

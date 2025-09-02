@@ -32,7 +32,7 @@ export default function AdvantagesCta() {
           className="mt-6"
         >
           <Link
-            href="#"
+            href="/register"
             className="inline-flex items-center rounded-md bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300"
           >
             Open an Account

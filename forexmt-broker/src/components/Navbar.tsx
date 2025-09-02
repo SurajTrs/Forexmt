@@ -187,7 +187,6 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Link href="#" className="text-sm text-gray-300 hover:text-white">Partnership</Link>
             <div className="text-sm text-gray-300">🇬🇧 English</div>
             <Link href="/login" className="text-sm px-3 py-1.5 rounded border border-white/20 text-white hover:bg-white/10">Login</Link>
             <Link href="/register" className="text-sm px-3 py-1.5 rounded bg-blue-600 hover:bg-blue-500 text-white">Get Started</Link>
@@ -276,8 +275,7 @@ export default function Navbar() {
             </details>
 
             <div className="flex items-center gap-3 pt-1">
-              <Link href="/company/partnership/" className="text-sm text-gray-300 hover:text-white" onClick={() => setMobileOpen(false)}>Partnership</Link>
-              <div className="text-sm text-gray-300">🇬🇧 English</div>
+                            <div className="text-sm text-gray-300">🇬🇧 English</div>
               <Link href="/login" className="text-sm px-3 py-1.5 rounded border border-white/20 text-white hover:bg-white/10" onClick={() => setMobileOpen(false)}>Login</Link>
               <Link href="/register" className="text-sm px-3 py-1.5 rounded bg-blue-600 hover:bg-blue-500 text-white" onClick={() => setMobileOpen(false)}>Get Started</Link>
             </div>

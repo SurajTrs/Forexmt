@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main className="relative min-h-screen pb-16 bg-white">
       <Hero />
- 
       {/* RiskBanner is now global in layout */}
       <Favourites/>
       

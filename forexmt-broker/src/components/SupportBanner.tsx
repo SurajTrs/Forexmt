@@ -40,7 +40,7 @@ export default function SupportBanner() {
 
               <div className="mt-6">
                 <Link
-                  href="#"
+                  href="/company/contact"
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500 hover:shadow-blue-600/40"
                   aria-label="Contact Us"
                 >

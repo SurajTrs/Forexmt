@@ -23,7 +23,7 @@ export default function AppCTA() {
                 Download App
               </Link>
               <Link
-                href="#open-account"
+                href="/register"
                 className="inline-flex items-center justify-center rounded-2xl bg-white/10 px-6 sm:px-7 py-3 text-[15px] sm:text-base font-semibold text-white shadow-sm ring-1 ring-white/10 transition hover:bg-white/15"
               >
                 Open Account

@@ -44,7 +44,7 @@ export default function TradersIntro() {
                   Start with confidence using our demo account and exclusive promotions. Learn from over 70 expert educators and access free, comprehensive resources.
                 </p>
                 <Link
-                  href="#"
+                  href="/start-trading"
                   className="mt-5 inline-flex items-center gap-2 rounded-full bg-blue-50 text-blue-600 px-5 py-2.5 font-medium hover:bg-blue-100 hover:text-blue-700 transition"
                 >
                   Start Trading <span className="ml-1">↗</span>

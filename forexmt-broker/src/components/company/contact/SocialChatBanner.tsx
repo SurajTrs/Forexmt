@@ -11,7 +11,7 @@ export default function SocialChatBanner() {
             <div className="mt-4 flex items-center justify-center gap-3">
               <a
                 aria-label="Facebook"
-                href="https://facebook.com/yourpage"
+                href="https://www.facebook.com/profile.php?id=61579959541051"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
@@ -22,7 +22,7 @@ export default function SocialChatBanner() {
               </a>
               <a
                 aria-label="Instagram"
-                href="https://instagram.com/yourpage"
+                href="https://www.instagram.com/forex__mt/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"

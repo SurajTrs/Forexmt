@@ -22,7 +22,7 @@ export default function CommoditiesHero() {
 
               <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
                 <a
-                  href="#start-trading"
+                  href="/start-trading"
                   className="inline-flex items-center justify-center rounded-2xl bg-white px-6 sm:px-7 py-3 text-[15px] sm:text-base font-semibold text-slate-900 shadow-sm ring-1 ring-white/10 transition hover:bg-white/90"
                 >
                   Start Trading Commodities

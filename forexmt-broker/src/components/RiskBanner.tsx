@@ -17,7 +17,7 @@ export default function RiskBanner() {
           Your capital is at risk. Leveraged products may not be suitable for everyone.
           Please consider our{' '}
           <a 
-            href="#" 
+            href="/" 
             className="font-semibold text-blue-600 hover:text-blue-700 hover:underline underline-offset-2"
             onClick={(e) => {
               e.preventDefault();

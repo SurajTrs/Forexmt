@@ -14,7 +14,7 @@ export default function RegisterPage() {
       <div className="absolute inset-0 z-0" aria-hidden>
         <video
           className="h-full w-full object-cover pointer-events-none"
-          poster="/Bonus.png"
+          poster="/B.png"
           autoPlay
           muted
           loop

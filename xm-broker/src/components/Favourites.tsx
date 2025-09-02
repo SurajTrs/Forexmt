@@ -79,7 +79,7 @@ export default function Favourites() {
             transition={{ type: "spring", stiffness: 280, damping: 18 }}
           >
             <Image
-              src="/mobile.png"
+              src="/mobile1.png"
               alt="Forexmt App preview"
               fill
               priority
